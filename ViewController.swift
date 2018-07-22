@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         print("hello,zuobangning");
         //Command+T
         //定义变量
-        var name : String = "bangning "
+        var name : String = "bangning  "
         //不可更改变量
         let fullName=name + "zuo"
         print(fullName);
