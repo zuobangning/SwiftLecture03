@@ -29,6 +29,20 @@ class ViewController: UIViewController {
         
         lbName?.text = fullName
         
+        let english=["a","b","c"]
+        var ints : [Int] = [1,2,3]
+        var floats : Array<Float> = Array(repeating: 0, count: 5)
+        
+        for index in 0..<3{
+            print("\(english[index])")
+        }
+        
+        for str in english{
+            print(str)
+            
+        }
+        
+        
         
     }
 
