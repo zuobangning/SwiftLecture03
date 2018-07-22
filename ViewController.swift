@@ -10,6 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var lbName:UILabel?
+    //var lbName:UILabel?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -21,7 +25,10 @@ class ViewController: UIViewController {
         var name : String = " bangning  "
         //不可更改变量
         let fullName=name + "zuo"
-        print(fullName);
+        //print(fullName);
+        
+        lbName?.text = fullName
+        
         
     }
 
