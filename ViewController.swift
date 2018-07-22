@@ -33,8 +33,10 @@ class ViewController: UIViewController {
         var ints : [Int] = [1,2,3]
         var floats : Array<Float> = Array(repeating: 0, count: 5)
         
+        //ints.sort()
+        
         for index in 0..<3{
-            print("\(english[index])")
+            print("\(ints[index])")
         }
         
         for str in english{
@@ -42,7 +44,11 @@ class ViewController: UIViewController {
             
         }
         
-        
+        //Dictionary
+        let 左 = [1:"A",2:"B",3:"C"]
+        for (a,b)  in 左 {
+            print("\(a):\(b)")
+        }
         
     }
 
