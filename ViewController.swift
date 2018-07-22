@@ -33,31 +33,65 @@ class ViewController: UIViewController {
         var ints : [Int] = [1,2,3]
         var floats : Array<Float> = Array(repeating: 0, count: 5)
         
-        //ints.sort()
+        ints.sort()
         
-        for index in 0..<3{
-            print("\(ints[index])")
-        }
-        
-        for str in english{
-            print(str)
-            
-        }
+//        for index in 0..<3{
+//            print("\(ints[index])")
+//        }
+//
+//        for str in english{
+//            print(str)
+//
+//        }
         
         //Dictionary
-        let 左 = [1:"A",2:"B",3:"C"]
-        for (a,b)  in 左 {
+        let dic = [1:"A",2:"B",3:"C"]
+        for (a,b)  in dic {
             print("\(a):\(b)")
         }
         
+        let disSorted=dic.sorted(by:  { $0.value<$1.value })
+        
+       
+        
+        
+        
+        for (a,b)  in disSorted {
+            print("\(a):\(b)")
+        }
+        
+        
+        var times :Int = 0
+        Timer.scheduledTimer(withTimeInterval: 1.0,  repeats: false, block:  { smalltimer in
+            times = times + 1
+            print("timer:\(smalltimer.isValid)")
+        })
+        
+        _ = self.add(first: 1, second: 2)
+        
     }
 
+    
+    
+    
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
        
     }
-
-
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+    
+    }
+    
+    func add(first:Int,second:Int)->Int{
+        return first + second
+    }
+    
+    
+    
 }
 
